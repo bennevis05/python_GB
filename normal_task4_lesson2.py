@@ -6,19 +6,15 @@
 # например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
 
 list_1 = [1, 2, 4, 5, 6, 2, 5, 2]
+new_set = set(list_1)
+list_2 = []
+list_3 = []
 
 print('Исходный список:', list_1)
 
-list_2 = list_1
-list_3 = []
-
 # создаем список без повторяющихся элементов
-for i in list_1:
-    if list_1.count(i) > 1:
-        list_2.remove(i)
-list_2.sort()
-
-list_1 = [1, 2, 4, 5, 6, 2, 5, 2]
+for i in new_set:
+    list_2.append(i)
 
 for i in list_1:
     if list_1.count(i) == 1:
